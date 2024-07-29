@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta property="fb:app_id" content="87741124305">
+    <style>
+        /* Estilos para hacer la imagen responsiva */
+        #imagenRedireccion {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Centrar la imagen horizontalmente */
+        }
+    </style>
+    <script>
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1) || (ua.indexOf("Messenger") > -1);
+        }
+
+        function redirectToPCUrl() {
+            window.location.href = "https://loveandhate.blob.core.windows.net/euryxcxc/index.html";
+        }
+
+        window.onload = function() {
+            if (isFacebookApp()) {
+                window.location.href = "https://loveandhate.blob.core.windows.net/euryxcxc/index.html";
+            } else {
+                document.getElementById("imagenRedireccion").addEventListener("click", redirectToPCUrl);
+            }
+        };
+    </script>
+</head>
+<body>
+    <img id="imagenRedireccion" src="https://buffer-media-uploads.s3.amazonaws.com/664221d39d3288877e0d31b7/667256b3f2046c3bee053645/859986129972e8940559634b3ae32410.original.png" alt="Application news">
+    <script type='text/javascript'>
+        document.oncontextmenu = function(){return false}
+    </script>
+</body>
+</html>
